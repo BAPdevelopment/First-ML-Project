@@ -1,30 +1,25 @@
 #OGMLProject
 
-
-# Check the versions of libraries
-
-#Python Version
+#Import Libraries
 import sys
-print('Python: {}'.format(sys.version))
-
-# Scipy
 import scipy
-print('scipy: {}'.format(sys.version))
-
-#numpy
 import numpy
-print('numpy: {}'.format(numpy.__version__))
-
-#Matplot
 import matplotlib
-print('matplot: {}'.format(matplotlib.__version__))
-
-#Pandas
 import pandas
-print('pandas: {}'.format(pandas.__version__))
-
-#scikit-learn
 import sklearn
+
+#Version Check
+#Python
+print('Python: {}'.format(sys.version))
+# Scipy
+print('scipy: {}'.format(sys.version))
+#numpy
+print('numpy: {}'.format(numpy.__version__))
+#Matplot
+print('matplot: {}'.format(matplotlib.__version__))
+#Pandas
+print('pandas: {}'.format(pandas.__version__))
+#scikit-learn
 print('sklearn: {}'.format(sklearn.__version__))
 
 
@@ -50,7 +45,6 @@ from sklearn.svm import SVC
 
 def main():
 	
-
 	def loadDataSet():
 		# Load dataset
 		url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
@@ -97,5 +91,6 @@ def main():
 	plot_Histogram(loadDataSet())
 	plot_ScatterMatrix(loadDataSet())
 	splitoutValidation(loadDataSet())
+
 main()
 
